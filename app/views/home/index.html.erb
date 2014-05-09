@@ -1,0 +1,32 @@
+
+        <header>  
+            <div  id="page-title" align="center">The Downward Spiral News</div>  
+        </header>  
+          
+<div id="wrapper">  
+            <nav>  
+                <ul>  
+                    <li><a rel="external" href="#">Home</a></li>  
+                    <li><a rel="external" href="#">About us</a></li>  
+                    <li><a rel="external" href="#">Contacts</a></li>  
+                </ul>  
+            </nav>  
+        <div id="core" class="clearfix">  
+              <section id="main">
+                <% @stories.each do | story | %>
+                  <article>
+                  <h2> 
+                   <%=story.title %>
+                  </h2>
+                  <p>
+                   <%=story.content.html_safe %>
+                  </p>
+                  </article>
+                <%end%>  
+              </section>
+        </div>  
+          
+        <footer>  
+            <p align="center">© <a href="econstructors.com">eConstructors</a> 2014</p>  
+        </footer>  
+    </div> 

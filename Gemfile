@@ -41,7 +41,13 @@ gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
     gem "rspec-rails"
     gem 'cucumber-rails', :require => false
     gem 'database_cleaner'
+    gem 'faker'
+    gem 'capybara'
+    gem 'guard-rspec'
+    gem 'launchy' 
   end
 
-gem 'devise'
-
+   group :development, :test do
+      gem 'rspec-rails'
+      gem 'factory_girl_rails'
+   end 
